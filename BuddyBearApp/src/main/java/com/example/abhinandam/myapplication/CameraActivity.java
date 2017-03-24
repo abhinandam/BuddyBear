@@ -2,6 +2,7 @@ package com.example.abhinandam.myapplication;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -51,6 +52,9 @@ public class CameraActivity extends Activity {
             public void onClick(android.view.View v) {
                 // get an image from the camera
                 mCamera.takePicture(null, null, mPicture);
+                onPause();
+                Intent testPage = new Intent(CameraActivity.this, TestActivity.class);
+                CameraActivity.this.startActivity(testPage);
             }
         });
     }
@@ -203,6 +207,20 @@ public class CameraActivity extends Activity {
         }
 
         return mediaFile;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        releaseCamera();              // release the camera immediately on pause event
+    }
+
+
+    private void releaseCamera(){
+        if (mCamera != null){
+            mCamera.release();        // release the camera for other applications
+            mCamera = null;
+        }
     }
 
 }
