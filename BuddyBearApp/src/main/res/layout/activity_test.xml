@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card="http://schemas.android.com/apk/res-auto" >
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="How do you think he's feeling?" />
+
+        <it.gmariotti.cardslib.library.view.CardListView
+            android:id="@+id/myList"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            card:list_card_layout_resourceID="@layout/list_card_thumbnail_layout"
+            style="@style/list_card.thumbnail"
+            android:layout_weight="1.25" />
+
+    </TableLayout>
+
+</LinearLayout>
