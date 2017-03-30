@@ -1,30 +1,23 @@
 package com.example.abhinandam.myapplication;
 
 import android.content.Context;
-import android.content.DialogInterface;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
+
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.app.AlertDialog;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+
 import android.widget.Toast;
 import android.os.*;
 
-import it.gmariotti.cardslib.library.internal.Card;
-import it.gmariotti.cardslib.library.internal.CardArrayAdapter;
-import it.gmariotti.cardslib.library.internal.CardHeader;
-import it.gmariotti.cardslib.library.internal.CardThumbnail;
-import it.gmariotti.cardslib.library.view.CardListView;
-
-import java.util.ArrayList;
-import java.util.Random;
-
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 
 public class TestActivity extends AppCompatActivity {
@@ -34,7 +27,7 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-
+/*
         ArrayList<ListItem> listItems = new ArrayList<ListItem>();
         ListItem joy = new ListItem(R.drawable.joy, "JOY", "symbolized by raising of the mouth corners (an obvious smile) and tightening of the eyelids");
         ListItem surprise = new ListItem(R.drawable.surprise, "SURPRISE", "symbolized by eyebrows arching, eyes opening wide and exposing more white, with the jaw dropping slightly");
@@ -79,7 +72,7 @@ public class TestActivity extends AppCompatActivity {
                         image.setImageResource(R.drawable.check);
                         builder1.setView(image);
                         builder1.setCancelable(true);
-                        
+
 
                         AlertDialog alert11 = builder1.create();
                         alert11.show();
@@ -114,6 +107,41 @@ public class TestActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
             }
         });
+*/
+        GridView gridview = (GridView) findViewById(R.id.myGrid);
+        gridview.setAdapter(new ImageAdapter(this));
+        gridview.setNumColumns(2);
+
+        gridview.setOnItemClickListener(new OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View v,
+                                    int position, long id) {
+           //     Toast.makeText(TestActivity.this, "" + position,
+           //             Toast.LENGTH_SHORT).show();
+
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(context);
+                if(position == 0 || position == 3) {
+                    ImageView image = new ImageView(TestActivity.this);
+                    image.setImageResource(R.drawable.check);
+                    builder1.setView(image);
+                    builder1.setCancelable(true);
+
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Intent cameraPage = new Intent(TestActivity.this, CameraActivity.class);
+                            TestActivity.this.startActivity(cameraPage);
+                        }
+                    }, 2000);
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "Not Quite, Try Again", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
     }
 }
 
@@ -141,7 +169,7 @@ public class TestActivity extends AppCompatActivity {
                 AlertDialog alert11 = builder1.create();
                 alert11.show();
             }
-        });*/
+        });
 
 class ListItem {
     int image;
@@ -153,4 +181,49 @@ class ListItem {
         this.header = header;
         this.description = description;
     }
+}
+*/
+
+class ImageAdapter extends BaseAdapter {
+    private Context mContext;
+
+    public ImageAdapter(Context c) {
+        mContext = c;
+    }
+
+    public int getCount() {
+        return mThumbIds.length;
+    }
+
+    public Object getItem(int position) {
+        return null;
+    }
+
+    public long getItemId(int position) {
+        return 0;
+    }
+
+    // create a new ImageView for each item referenced by the Adapter
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ImageView imageView;
+        if (convertView == null) {
+            // if it's not recycled, initialize some attributes
+            imageView = new ImageView(mContext);
+            imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
+            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imageView.setPadding(2, 2, 2, 2);
+        } else {
+            imageView = (ImageView) convertView;
+        }
+
+        imageView.setImageResource(mThumbIds[position]);
+        return imageView;
+    }
+
+    // references to our images
+    private Integer[] mThumbIds = {
+            R.drawable.joy, R.drawable.sadness,
+            R.drawable.surprise, R.drawable.anger,
+            R.drawable.disgust, R.drawable.fear
+    };
 }
