@@ -14,9 +14,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:gravity="center"
-            android:text="How do you think he's feeling?" />
+            android:text="How is he feeling?" />
 
         <it.gmariotti.cardslib.library.view.CardListView
             android:id="@+id/myList"
