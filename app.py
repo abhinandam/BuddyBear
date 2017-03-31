@@ -50,5 +50,10 @@ def metrics():
 def buddybear():
     return render_template('buddybear.html')
 
+@app.route('/lessons', methods=["GET", "POST"])
+def lessons():
+    return render_template('lessons.html')
+
+
 if __name__ == '__main__':
     app.run()
