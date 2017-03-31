@@ -22,6 +22,8 @@ import java.io.IOException;
 
 import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.util.Random;
+
 import static android.content.ContentValues.TAG;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_VIDEO;
@@ -53,8 +55,15 @@ public class CameraActivity extends Activity {
                 // get an image from the camera
                 mCamera.takePicture(null, null, mPicture);
                 onPause();
-                Intent testPage = new Intent(CameraActivity.this, TestActivity.class);
-                CameraActivity.this.startActivity(testPage);
+                Random random = new Random();
+                if (random.nextBoolean()) {
+                    Intent basicPage = new Intent(CameraActivity.this, BasicActivity.class);
+                    CameraActivity.this.startActivity(basicPage);
+                }
+                else {
+                    Intent testPage = new Intent(CameraActivity.this, TestActivity.class);
+                    CameraActivity.this.startActivity(testPage);
+                }
             }
         });
     }

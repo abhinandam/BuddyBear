@@ -16,8 +16,9 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="How do you think he's feeling?" />
-
+            android:textSize="32sp"
+            android:text="How is he feeling?" />
+<!--
         <it.gmariotti.cardslib.library.view.CardListView
             android:id="@+id/myList"
             android:layout_width="match_parent"
@@ -26,6 +27,21 @@
             style="@style/list_card.thumbnail"
             android:layout_weight="1.25" />
 
+-->
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/myGrid"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:columnWidth="90dp"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            />
+
+
     </TableLayout>
+
+
 
 </LinearLayout>
