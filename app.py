@@ -39,12 +39,16 @@ def close_connection(exception):
 
 @app.route('/', methods=["GET", "POST"])
 def root():
-    return render_template('homepage.html')
+    return render_template('devices.html')
 
 
 @app.route('/metrics', methods=["GET", "POST"])
 def metrics():
     return render_template('metrics.html')
+
+@app.route('/buddybear', methods=["GET", "POST"])
+def buddybear():
+    return render_template('buddybear.html')
 
 if __name__ == '__main__':
     app.run()
