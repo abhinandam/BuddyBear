@@ -30,84 +30,77 @@
 /* Add some padding inside the card container */
 .container {
     padding: 2px 16px;
+    padding-top: 50px;
 }
+
+.welcomeTitle {
+    font-family: "Apple Chancery", "Zapf Chancery", cursive;
+    color: blue;
+    font-weight: bold;
+    text-align:center;
+    font-size:80px;
+    padding-bottom:60px;
+}
+
+body {
+    background-image: url('static/ForestBackground.png');
+    background-size: 100% 100%;
+}
+
+button {
+      background-color: #FFA300; /* Orange */
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: Chicago, Charcoal, sans-serif;
+}
+
 </style>
-  <body>
+<body>
 
-    <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">APP SELECTION</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="work.html">Lessons</a></li>
-            <li><a href="about.html">Settings</a></li>
-            <li><a href="blog.html">Metrics</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+<h1 class= "welcomeTitle">Welcome to our family!</h1>
 
-
- <h1 style="face:verdana; padding:10px; padding-left:2cm; font-size:40px">Choose your device</h1>
-
-	<!-- +++++ Projects Section +++++ -->
+<button type="button">Choose the product that best fits your needs</button>
 
 	<div class="container pt">
 		<div class="row mt centered">
-			<div class="col-lg-4">
-				<div class="card">
-					<a class="zoom green" href="/buddybear"><img class="img-responsive" src="static/bear_1.png" alt="" /></a>
-					<h2 style="text-align:center">BUDDY BEAR</h2>
-					<h4 style="text-align:center">Emotion Recognition</h4>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="card">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="static/cat_1.png" alt="" /></a>
-				<h2 style="text-align:center">CHATTY CAT</h2>
-				<h4 style="text-align:center">Speech Therapy</h4>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="card">
-				<a class="zoom green" href="work01.html"><img style="height:520px" class="img-responsive" src="static/monkey_1.png" alt="" /></a>
-				<h2 style="text-align:center">MARTY MONKEY</h2>
-				<h4 style="text-align:center">Dyslexia</h4>
-				</div>
-			</div>
-		</div><!-- /row -->
-		<div class="row mt centered">
-			<div class="col-lg-4">
+
+      <div class="col-lg-3">
 				<div class="card">
 				<a class="zoom green" href="work01.html"><img class="img-responsive" src="static/owl_1.png" alt="" /></a>
-				<h2 style="text-align:center">OLLIE OWL</h2>
-				<h4 style="text-align:center">ADHD</h4>
+				<h2 style="text-align:center; font-family: Sand, fantasy">OLLIE OWL</h2>
+				<h4 style="text-align:center; face:verdana">A structured program that encourages good behavior for children with ADHD</h4>
 				</div>
 			</div>
-			<div class="col-lg-4">
+
+			<div class="col-lg-3">
 				<div class="card">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="static/panda_1.png" alt="" /></a>
-				<h2 style="text-align:center">PAMMY PANDA</h2>
-				<h4 style="text-align:center">Dysgraphia</h4>
+					<a class="zoom green" href="/buddybear"><img class="img-responsive" src="static/bear_1.png" alt="" /></a>
+					<h2 style="text-align:center; font-family: Sand, fantasy">BUDDY BEAR</h2>
+					<h4 style="text-align:center; face:verdana">Comprehensive tool for emotion recognition learning and application</h4>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-3">
 				<div class="card">
-				<a class="zoom green" href="work01.html"><img style="height:520px" class="img-responsive" src="static/rabbit_1.png" alt="" /></a>
-				<h2 style="text-align:center">RUBY RABBIT</h2>
-				<h4 style="text-align:center">Language Processing Disorder</h4>
+				<a class="zoom green" href="work01.html"><img class="img-responsive" src="static/cat_1.png" alt="" /></a>
+				<h2 style="text-align:center; font-family: Sand, fantasy">CHATTY CAT</h2>
+				<h4 style="text-align:center; face:verdana">Coordinate mouth to produce sounds that enables them to form words and sentences</h4>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="card">
+				<a class="zoom green" href="work01.html"><img style="height:375px"class="img-responsive" src="static/monkey_1.png" alt="" /></a>
+				<h2 style="text-align:center; font-family: Sand, fantasy">MARTY MONKEY</h2>
+				<h4 style="text-align:center; face:verdana">A program that uses sequential and multi sensory programs to help with dyslexia</h4>
 				</div>
 			</div>
 		</div><!-- /row -->
+
 	</div><!-- /container -->
 
 
