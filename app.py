@@ -1,7 +1,7 @@
 from flask import Flask, g, render_template, abort, request
 from flask.ext.sqlalchemy import SQLAlchemy
 import sqlite3
-
+import os
 
 # -- leave these lines intact --
 app = Flask(__name__)
