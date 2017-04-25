@@ -1,9 +1,12 @@
 from flask import Flask, g, render_template, abort, request
+from flask.ext.sqlalchemy import SQLAlchemy
 import sqlite3
 
 
 # -- leave these lines intact --
 app = Flask(__name__)
+app.config('SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+db = SQLAlchemy(app)
 
 
 def get_db():
