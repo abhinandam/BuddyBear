@@ -5,7 +5,7 @@ import sqlite3
 
 # -- leave these lines intact --
 app = Flask(__name__)
-app.config('SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
 
 
