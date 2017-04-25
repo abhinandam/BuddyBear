@@ -15,49 +15,80 @@
 <script src="static/assets/js/hover.zoom.js"></script>
 <script src="static/assets/js/hover.zoom.conf.js"></script>
 
+<style>
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
-<div style="background-image: url('https://s-media-cache-ak0.pinimg.com/originals/4c/98/60/4c98601309eb36f9a0583c848239d245.jpg'); background-size: 100% 100%; background-repeat: no-repeat; padding:200px" id="ww">
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+    padding-top: 50px;
+}
+body {
+    background-image: url('static/ForestBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+img.resize{
+    width:140px; /* you can use % */
+    height: auto;
+}
+.title {
+    line-height: 30px;
+    font-size:50px;
+    font-family: "Apple Chancery", "Zapf Chancery", cursive;
+    color: blue
+}
 
-</div><!-- /ww -->
+</style>
 
-
+<p class='title'>
+  <img src='static/bear_1.png' style='vertical-align:middle; width:10%;height:auto'/>Buddy Bear
+</p>
 
 <div class="container pt">
   <div class="row mt centered">
     <div class="col-lg-4">
-      <div class="card" style="width: 35rem;">
-        <img class="card-img-top" style="width:50%;height:auto" src="http://www.lorenasiminovich.com/wp-content/uploads/2011/03/flash.jpg" alt="Card image cap">
+      <div class="card">
+        <a class="zoom green" href="/lessons"><img class="card-img-top"  style="width:75%;height:auto" src="static/cards_1.png" alt="Card image cap"></a>
         <div class="card-block">
-          <h4 class="card-title">Lessons</h4>
-          <p class="card-text"> Practice emotion recognition with flashcards!</p>
-          <a href="/lessons" class="btn btn-primary">LESSONS</a>
+          <h4  class="card-title">Lessons</h4>
+          <p > A variety of interactive lessons and games</p>
         </div>
       </div>
     </div>
 
     <div class="col-lg-4">
-      <div class="card" style="width: 35rem;">
-        <img class="card-img-top" style="width:85%;height:auto" src="http://wallin.tv/wp/wp-content/uploads/2016/12/devices-540x271.png" alt="Card image cap">
+      <div class="card">
+        <a class="zoom green" href="/devices"><img class="card-img-top" style="width:50%;height:auto" src="static/bear_1.png" alt="Card image cap"></a>
         <div class="card-block">
           <h4 class="card-title">Devices</h4>
-          <p class="card-text"> View connected devices</p>
-          <a href="/metrics" class="btn btn-primary">DEVICES</a>
+          <p > Choose from a variety of options for your child's device</p>
         </div>
       </div>
     </div>
 
     <div class="col-lg-4">
-      <div class="card" style="width: 35rem;">
-        <img class="card-img-top" style="width:75%;height:auto" src="http://s3-eu-west-1.amazonaws.com/de-blog/uploads/2015/02/viral-metrics-app-success1-660x443.png" alt="Card image cap">
+      <div class="card" >
+        <a class="zoom green" href="/metrics"><img class="card-img-top" style="width:80%;height:auto" src="static/graph_pie.png" alt="Card image cap"></a>
         <div class="card-block">
           <h4 class="card-title">Metrics</h4>
-          <p class="card-text"> Evaluate your child's progress using the online dashboard portal</p>
-          <a href="/metrics" class="btn btn-primary">METRICS</a>
+          <p > Track progress and achievements made by your child with the Buddy Bear Tool</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<body>
-  </html>
+
+
+
+<body/>
+</html>
