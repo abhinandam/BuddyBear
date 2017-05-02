@@ -84,6 +84,29 @@
     <script src="static/assets/js/hover.zoom.js"></script>
     <script src="static/assets/js/hover.zoom.conf.js"></script>
 
+    <script>
+    var score = 0;
+    function setCorrect(image){
+        console.log("EXECUTTTEEEEDD: "+image);
+
+        score = $("#score").val();
+        console.log("Current value: "+score);
+
+        if(image == "myImg1"|| image == "myImg3" || image =="myImg5" || image == "myImg6") {
+            document.getElementById(image).src='static/assets/img/x.png';
+            score--;
+        }
+        else {
+            document.getElementById(image).src='static/assets/img/check.png';
+            score++;
+        }
+        $("#score").val(score);
+    }
+    function submitScore(){
+      console.log(score);
+    }
+    </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -151,27 +174,44 @@
 		</div>
 		<div class="row mt centered">
 			<div class="col-lg-4">
-  				<img id = 'myImg1' src="static/assets/img/portfolio/port01.jpg" alt="" class="image" style="width:100%" onclick="document.getElementById('myImg1').src='static/assets/img/x.png'">
+  				<img id = 'myImg1' src="static/assets/img/portfolio/port01.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg1')">
 			</div>
 			<div class="col-lg-4">
-				<img id = 'myImg2' src="static/assets/img/portfolio/port02.jpg" alt="" class="image" style="width:100%" onclick="document.getElementById('myImg2').src='static/assets/img/check.png'">
+				<img id = 'myImg2' src="static/assets/img/portfolio/port02.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg2')">
 			</div>
 			<div class="col-lg-4">
-				<img id = 'myImg3' src="static/assets/img/portfolio/port03.jpg" alt="" class="image" style="width:100%" onclick="document.getElementById('myImg3').src='static/assets/img/x.png'">
+				<img id = 'myImg3' src="static/assets/img/portfolio/port03.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg3')">
 			</div>
 		</div><!-- /row -->
 		<div class="row mt centered">
 			<div class="col-lg-4">
-				<img id = 'myImg4' src="static/assets/img/portfolio/port04.jpg" alt="" class="image" style="width:100%" onclick="document.getElementById('myImg4').src='static/assets/img/check.png'">
+				<img id = 'myImg4' src="static/assets/img/portfolio/port04.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg4')">
 			</div>
 			<div class="col-lg-4">
-				<img id = 'myImg5' src="static/assets/img/portfolio/port05.jpg" alt="" class="image" style="width:100%" onclick="document.getElementById('myImg5').src='static/assets/img/x.png'">
+				<img id = 'myImg5' src="static/assets/img/portfolio/port05.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg5')">
 			</div>
 			<div class="col-lg-4">
-				<img id = 'myImg6' src="static/assets/img/portfolio/port06.jpg" alt="" class="image" style="width:100%" onclick="document.getElementById('myImg6').src='static/assets/img/x.png'">
+				<img id = 'myImg6' src="static/assets/img/portfolio/port06.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg6')">
 			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
+  <div class="container pt">
+		<div class="row mt">
+      <form action="/lessons" method="post">
+      <button type="button" class="btn btn-secondary btn-lg">Reset</button>
+      </form>
+
+      <form action="/metrics" method="post">
+
+      <input id="score" type="hidden" name="score" value="0">
+        <button type="submit" class="btn btn-success btn-lg">Done</button>
+      </input>
+      </form>
+</div>
+  </div>
+
+
+
 
 
 

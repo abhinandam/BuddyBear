@@ -1,14 +1,14 @@
 from flask import Flask, g, render_template, abort, request
-from flask.ext.sqlalchemy import SQLAlchemy
+#from flask.ext.sqlalchemy import SQLAlchemy
 import sqlite3
 import os
 
 # -- leave these lines intact --
 app = Flask(__name__)
+'''
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
-
-
+'''
 def get_db():
     if not hasattr(g, 'sqlite_db'):
         db_name = app.config.get('DATABASE', 'squawker.db')
@@ -25,7 +25,7 @@ def init_db():
         db.commit()
 
 
-@app.cli.command('initdb')
+#@app.cli.command('initdb')
 def initdb_command():
     """Creates the database tables."""
     init_db()
@@ -47,6 +47,10 @@ def root():
 
 @app.route('/metrics', methods=["GET", "POST"])
 def metrics():
+    #read score from post. request.POST['score']
+    #read cookie
+    #set cookie
+
     return render_template('metrics.html')
 
 @app.route('/buddybear', methods=["GET", "POST"])
