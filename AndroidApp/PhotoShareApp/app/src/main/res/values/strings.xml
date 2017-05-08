@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PhotoShareApp</string>
+    <string name="google_sign_in">Google Sign In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Skip Sign In</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_browse_photos">BrowsePhotosActivity</string>
+</resources>

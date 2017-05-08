@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "585655159651",
+    "firebase_url": "https://photoshareapp-65eb9.firebaseio.com",
+    "project_id": "photoshareapp-65eb9",
+    "storage_bucket": "photoshareapp-65eb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585655159651:android:49ccda39de5e5868",
+        "android_client_info": {
+          "package_name": "com.abhinandam.photoshareapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585655159651-iqflqrnr1fh4b35von7ntar245302e6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5EyfBoJTxt5wOsPisYm34zAgcr2j_lfA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
