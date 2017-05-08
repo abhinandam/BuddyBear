@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    #slideshow {
+	  margin: 10px auto;
+	  position: relative;
+	  width: 500px;
+	  height: relative;
+	  padding: 10px;
+	  box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+	}
+	.right {
+    position: absolute;
+    right: -300px;
+    width: 300px;
+    padding: 10px;
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+	.container {
+	    position: relative;
+	    width: 50%;
+	}
+
+	.image {
+	  opacity: 1;
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	  transition: .5s ease;
+	  backface-visibility: hidden;
+	}
+
+	.middle {
+	  transition: .5s ease;
+	  opacity: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%)
+	}
+
+	.col-lg-4:hover .image {
+	  opacity: 0.75;
+	}
+
+	.container:hover .middle {
+	  opacity: 1;
+	}
+
+	.text {
+	  background-color: #4CAF50;
+	  color: white;
+	  font-size: 16px;
+	  padding: 16px 32px;
+	}
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Flashcards!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="static/assets/css/main.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="static/assets/js/hover.zoom.js"></script>
+    <script src="static/assets/js/hover.zoom.conf.js"></script>
+
+    <script>
+    var score = 0;
+    function setCorrect(image){
+        console.log("EXECUTTTEEEEDD: "+image);
+
+        score = $("#score").val();
+        console.log("Current value: "+score);
+
+        if(image == "myImg1"|| image == "myImg3" || image =="myImg5" || image == "myImg6") {
+            document.getElementById(image).src='static/assets/img/x.png';
+            score--;
+        }
+        else {
+            document.getElementById(image).src='static/assets/img/check.png';
+            score++;
+        }
+        $("#score").val(score);
+    }
+    function submitScore(){
+      console.log(score);
+    }
+    </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">LESSONS</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="work.html">Lessons</a></li>
+            <li><a href="about.html">Devices</a></li>
+            <li><a href="blog.html">Metrics</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div id="ww">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+						<div id="slideshow" class="right">
+	   						<div>
+	     						<img class="image" src="static/assets/img/portfolio/sad1.jpg">
+	   						</div>
+	   						<div>
+	     						<img class="image" src="static/assets/img/portfolio/sad4.jpeg">
+	   						</div>
+	   						<div>
+	   							<img class="image" src="static/assets/img/portfolio/sad3.jpg">
+	   						</div>
+   						</div>
+   						<img src="static/assets/img/sadness_clean.png" alt="Stanley">
+					<h1>Sadness</h1>
+					<h3>Symbolized by lowering of the mouth corners, the eyebrows descending to the inner corners and the eyelids drooping</h3>
+				</div><!-- /col-lg-8 -->
+
+			</div><!-- /row -->
+
+	    </div> <!-- /container -->
+	</div><!-- /ww -->
+
+
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-lg-6 col-lg-offset-3 centered">
+				<h3>EXERCISE</h3>
+				<hr>
+				<p>Click on whoever you think is sad!</p>
+			</div>
+		</div>
+		<div class="row mt centered">
+			<div class="col-lg-4">
+  				<img id = 'myImg1' src="static/flashcards/happy1.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg1')">
+			</div>
+			<div class="col-lg-4">
+				<img id = 'myImg2' src="static/flashcards/sad1.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg2')">
+			</div>
+			<div class="col-lg-4">
+				<img id = 'myImg3' src="static/flashcards/happy2.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg3')">
+			</div>
+		</div><!-- /row -->
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<img id = 'myImg4' src="static/flashcards/sad2.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg4')">
+			</div>
+			<div class="col-lg-4">
+				<img id = 'myImg5' src="static/flashcards/happy3.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg5')">
+			</div>
+			<div class="col-lg-4">
+				<img id = 'myImg6' src="static/flashcards/happy4.jpg" alt="" class="image" style="width:100%" onclick="setCorrect('myImg6')">
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+  <div class="container pt">
+		<div class="row mt">
+      <form action="/lessons" method="post">
+      <button type="button" class="btn btn-secondary btn-lg">Reset</button>
+      </form>
+
+      <form action="/metrics" method="post">
+
+      <input id="score" type="hidden" name="score" value="0">
+        <button type="submit" class="btn btn-success btn-lg">Done</button>
+      </input>
+      </form>
+</div>
+  </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+		$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000);
+	</script>
+  </body>
+</html>
