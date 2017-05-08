@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/80d09e97ec117aa4b6cf984e82862ce9545f4ac5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_b2b43a08464d67034bf6a1519d29ef402b171716.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/096de67b4c1f917bc77a21d7eb710762854cd389/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_06f5b047624d8dfd303980d7eec7a2301b736033.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/9b4817e3704c47c70de57617fc70261af64678a0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_80f492ab998ca3363e831a888b5961b05eadca4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.0_291911bacf6eeb4e9b1a1bab70e33caa0f9792ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/fcd126e0eefe56c12cb7ae0347f3a8f2ab3aa57c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_6688aa94bcd4d6773be055f4d61a443fade502fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/53405feb28258f4dc4873adfb6e5fb11d3dcbb16/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_b24e82e22b9d8508c3e6b5ffc8dc0f37fd7082a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/0116a623e83516af68d00b04884d96ff6d71a0cf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_05f5f57b7885e495a98b5a65bf6968111d7b8974.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/a127512d05916fca6bb6ba8fd9c4c2a5a0434f37/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_ba8fa285f61050d45f5e7490d983b59a67d4b9af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/e7975f2eab99ddc99fba10c9f3a99958a6b96b00/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_5dc354673ed42d4262c852e33a0bd433c5ec978d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_aea2b62b92ff11ee67a9e17ae8439dc1ebde2526.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/gson-2.5_aa6a0873152bea0c55a45ff2a1a55fabcc73752d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/aefb2f6de2ee5cc7b45326bc7cb895385a4b91de/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_8aa03b135ac123f2a2483841a928bf6fdfcb2a4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/d6825c77d597a43c0882fca7c72eb1668f02cb9b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_7b5d59bf06ea8df34c25c7e398f911f595c1d7a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/175d638071ad7487d200c13fb3c7833d75a579be/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e14806eb68bf5098f8a6b6f09e414143b7532280">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_a64cb2fd89945ad34d38ae1e9c591eae1e734c10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/d881f81922ca925c385ab2fcfdf1c5b9d5a8a927/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_dc56ed4c05afeb9c0a9a4165fe53ae811254ec6e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/161d0dae823feb820712ec273a9e44382f88429b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_8fabf08c97bfba031db7f725c9eee11580841801.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/commons-io-2.4_db9d9c7f5dc9abc44c05f9a56b43532b2a4af315.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/14e46eadeb0be16db920592737104213110c4203/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9885b9cbfc39129a13674d39d0cae321fc0dc97">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_8bdc58bcea454927b3108b061e6a0dc64c481ffe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/abhinandam/.android/build-cache/2c69736f00b9b4d7af45ab945add91e7cb008309/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="/Users/abhinandam/Desktop/Cognitive-Emotion-Android/Sample/app/build/intermediates/pre-dexed/debug/classes_0fe44b6cdf999fcd38192c92390d1abda6837681.jar" />
+    </item>
+
+</items>
